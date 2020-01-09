@@ -1,0 +1,14 @@
+security:
+  oauth2:
+    client:
+      client-id: USER_CLIENT_APP
+      client-secret: password
+      access-token-uri: http://localhost:8082/oauth/token
+      user-authorization-uri: http://localhost:8082/oauth/authorize
+    resource:
+      token-info-uri: http://localhost:8082/oauth/check_token
+server:
+  servlet:
+    session:
+      cookie:
+        name: KSESSION
